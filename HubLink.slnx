@@ -1,0 +1,10 @@
+﻿<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/HubLink.Application/HubLink.Application.csproj" />
+    <Project Path="src/HubLink.Infrastructure/HubLink.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/HubLink.Tests/HubLink.Tests.csproj" />
+  </Folder>
+  <Project Path="HubLink.Desktop/HubLink.Desktop.csproj" />
+</Solution>

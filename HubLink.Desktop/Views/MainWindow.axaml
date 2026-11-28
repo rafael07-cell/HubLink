@@ -1,0 +1,13 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:HubLink.Desktop.ViewModels"
+        x:Class="HubLink.Desktop.Views.MainWindow"
+        x:DataType="vm:MainWindowViewModel"
+        Title="HubLink - Shipment Tracker"
+        Width="1000" Height="650" MinWidth="800" MinHeight="500">
+
+  <Grid RowDefinitions="Auto,*">
+    <TextBlock Grid.Row="0" Classes="appTitle" Text="HubLink - Shipment Tracker" />
+    <TextBlock Grid.Row="1" Margin="16" Text="{Binding Status}" />
+  </Grid>
+</Window>
