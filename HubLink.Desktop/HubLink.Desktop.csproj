@@ -24,4 +24,10 @@
     <ProjectReference Include="..\src\HubLink.Application\HubLink.Application.csproj" />
     <ProjectReference Include="..\src\HubLink.Infrastructure\HubLink.Infrastructure.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <None Update="appsettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
 </Project>
+

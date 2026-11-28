@@ -3,6 +3,7 @@ using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Markup.Xaml;
 using HubLink.Desktop.ViewModels;
 using HubLink.Desktop.Views;
+using HubLink.Infrastructure.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 
@@ -20,6 +21,9 @@ public partial class App : Avalonia.Application
     public override void OnFrameworkInitializationCompleted()
     {
         var services = new ServiceCollection();
+
+        // Address, branch and timeout come from appsettings.json / environment variables.
+        services.AddSingleton(SettingsLoader.Load());
 
         services.AddSingleton<MainWindowViewModel>();
 

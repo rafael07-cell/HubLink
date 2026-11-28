@@ -8,6 +8,10 @@
 
   <Grid RowDefinitions="Auto,*">
     <TextBlock Grid.Row="0" Classes="appTitle" Text="HubLink - Shipment Tracker" />
-    <TextBlock Grid.Row="1" Margin="16" Text="{Binding Status}" />
+    <StackPanel Grid.Row="1" Margin="16" Spacing="6">
+      <TextBlock Text="{Binding Status}" />
+      <TextBlock Text="{Binding Branch, StringFormat='Branch: {0}'}" />
+      <TextBlock Text="{Binding Endpoint, StringFormat='Request URL: {0}'}" TextWrapping="Wrap" />
+    </StackPanel>
   </Grid>
 </Window>
